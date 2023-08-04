@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Husky Store</title>
+    <meta name="description" content="Um simples bot com varias funçoes para o Discord.">
+    <meta name="theme-color" content="#00EEFE">
+    <link rel="icon" type="image/jpg" sizes="300x250" href="assets/img/huskystore.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DockModdz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-color: var(--background);">
+    <div id="top" style="height: 12px;">
+        <nav class="navbar navbar-light navbar-expand fixed-top"
+            style="color: var(--main-color);border-top-width: 6px;border-top-style: solid;background: var(--background);">
+            <div class="container-fluid"><a class="navbar-brand" href="#"
+                    style="color: var(--main-color); font-family: Arial, sans-serif;">Husky Store</a><button
+                    data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+                        navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active smoothScroll" href="#feature"
+                                style="color: var(--text-color); transition: transform 0.3s, color 0.3s;">Informações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#commands"
+                                style="color: var(--text-color); transition: transform 0.3s, color 0.3s;">Perguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://discord.gg/2DCFJHmjCB"
+                                style="color: var(--text-color); transition: transform 0.3s, color 0.3s;">Discord</a>
+                        </li>
+                    </ul>
+
+                    <style>
+                        /* Estilos para os itens da lista */
+                        .nav-item {
+                            display: inline-block;
+                            margin-right: 20px;
+                        }
+
+                        .nav-link {
+                            color: var(--text-color);
+                            text-decoration: none;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+
+                        /* Efeito de escala suave ao passar o mouse sobre os links */
+                        .nav-link:hover {
+                            transform: scale(1.2);
+                            color: var(--main-color);
+                            /* Mude para a cor que desejar durante a animação */
+                        }
+
+                        /* O código abaixo é apenas para estilização de exemplo */
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f5f5f5;
+                            text-align: center;
+                        }
+                    </style>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center"
+        style="height: 418px;text-align: center;margin: 55px;">
+        <img class="rounded" src="assets/img/huskylua.png" width="150" height="150" style="margin-right: 50%;">
+        <img class="rounded" src="assets/img/huskystore.png" width="150" height="150" style="margin-top: 30px;">
+        <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Husky Store</h1>
+        <p style="color: var(--secondary-text-color);"></p>
+        <div class="tada animated">
+            <div role="group" class="btn-group">
+                <a href="https://discord.gg/2DCFJHmjCB" class="btn btn-primary shadow-btn" type="button"
+                    style="margin: 5px; background-color: var(--main-color); border-color: var(--main-color); border-radius: 10px;">
+                    Entre em nosso servidor
+                </a>
+                <a class="btn btn-primary smoothScroll shadow-btn" role="button"
+                    style="margin: 5px; background-color: var(--main-color); border-color: var(--main-color); border-radius: 10px;"
+                    href="#feature">
+                    Informações
+                </a>
+            </div>
+        </div>
+
+        <style>
+            .tada.animated {
+                display: inline-block;
+                transition: transform 0.3s;
+            }
+
+            .shadow-btn {
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .shadow-btn:hover {
+                transform: translateY(-5px);
+            }
+        </style>
+    </header>
+    <div id="feature" style="height: 90px;background: var(--secondary);">
+        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="var(--background)" fill-opacity="1"
+                    d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+                </path>
+            </svg></div>
+    </div>
+    <div class="features-boxed" style="background: var(--secondary);">
+        <div class="container" style="color: var(--main-color);">
+            <div class="intro">
+                <h2 class="text-center" style="color: var(--text-color);">Informações Husky</h2>
+            </div>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div id="features" class="box">
+                    <img src="./assets/img/huskystore.png" class="icon"
+                        style="width: 40px; height: 40px; /* outras estilizações */">
+                    <h3 class="name">Quem somos?</h3>
+                    <p class="description" style="color: var(--secondary-text-color); text-align: center;">
+                        A Husky Store é uma loja online focada em desenvolvimento de BOTs direcionados ao Discord. Por meio dos nossos sistemas buscamos melhorar a experiência dos usuários em seu servidor. Organização, profissionalismo e praticidade são nossa marca registrada.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                <div id="features" class="box">
+                    <img src="./assets/img/duvidas.png" class="icon"
+                        style="width: 40px; height: 40px; /* outras estilizações */">
+                    <h3 class="name">O que são BOTs?</h3>
+                    <p class="description" style="color: var(--secondary-text-color); text-align: center;">BOT é uma abreviatura utilizada para "robô", um software que executa tarefas pré-definidas e programadas.
+
+                        Os BOTs possuem a finalidade de realizar tarefas que antes seriam feitas manualmente por alguém. São programados para possibilitar diversas formas de automação e interação entre os usuários e a plataforma. 
+                        
+                        Cada BOT pode realizar uma série de funcionalidades diferentes, sendo definidas de acordo com a necessidade do cliente.<br></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                <div id="features" class="box">
+                    <img src="./assets/img/duvidas.png" class="icon"
+                        style="width: 40px; height: 40px; /* outras estilizações */">
+                    <h3 class="name">Como funcionam nossos BOTs?</h3>
+                    <p class="description" style="color: var(--secondary-text-color); text-align: center;">Os BOTs da Husky Store são criações exclusivas, desenvolvidas do zero de acordo com o desejo e a necessidade do cliente. 
+
+                        Nossa especialidade são BOTs de <strong>gerenciamento</strong> e <strong>suporte</strong>, que auxiliam e facilitam as interações em servidores de games e lojas. Você pode conferir as funcionalidades já existentes em nosso portfólio clicando <a href="https://discord.gg/2DCFJHmjCB">aqui</a>. 
+                        
+                        É importante ressaltar que apesar de termos uma especialidade, trabalhamos com qualquer tipo de BOT! Basta o cliente solicitar as funcionalidades requeridas e desenvolveremos.<br></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <center>
+        <center> </center>
+        </div>
+        </div>
+    </center>
+
+
+    <div></div>
+    </div>
+    <div style="background-color: var(--background);">
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-41.53,-9.56 C167.83,173.98 302.14,-60.89 534.09,89.10 L500.00,0.00 L0.00,0.00 Z"
+                    style="stroke: none; fill: var(--secondary);"></path>
+            </svg></div>
+    </div>
+    <div id="commands">
+        <section>
+            <div class="container-fluid text-white">
+                <div class="row row-cols-3 justify-content-center" style="color: var(--secondary-text-color);">
+                    <div class="col-auto col-md-6 col-lg-4 text-center pb-5 pt-5 number-item love_counter">
+                        <h1 class="love_count" style="font-size: 70px;"><strong>36</strong></h1>
+                        <h4 style="color: var(--main-color);margin-top: -6px;">Aplicações desenvolvidas</h4>
+                    </div>
+                    <div class="col-auto col-lg-4 text-center align-self-center pb-5 pt-5 love_counter">
+                        <h1 class="love_count" style="font-size: 70px;"><strong>29</strong></h1>
+                        <h4 style="color: var(--main-color);margin-top: -6px;">Clientes satisfeitos!</h4>
+
+
+                        <br><b></b> <br><br><b></b>
+                        <center> </center>
+                        <iframe src="https://discord.com/widget?id=1024789592852938872&theme=dark" width="350"
+                            height="56" allowtransparency="true" frameborder="0"
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe
+                            </center<br><b></b>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <h2>Perguntas frequentes</h2>
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Vocês vendem o
+                            código?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p style="background-color: rgba(80, 80, 80, 0.7); padding: 10px; border-radius: 10px;">
+                            A Husky Store não fornece a source (código/script) do bot para nenhum cliente, isso acontece
+                            para evitar futuros problemas e até mesmo para manter a exclusividade de cada bot. Sendo
+                            assim, nós mesmos hospedamos o bot e um valor simbólico é cobrado mensalmente para mantê-lo
+                            online.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Como faço um
+                            orçamento?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p style="background-color: rgba(80, 80, 80, 0.7); padding: 10px; border-radius: 10px;">
+                            Para realizar um orçamento você deve entrar em nosso servidor do Discord e abrir um ticket!
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Quanto tempo
+                            leva para o BOT ficar pronto?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p style="background-color: rgba(80, 80, 80, 0.7); padding: 10px; border-radius: 10px;">
+                            A partir da data em que foi realizado o seu pedido, a Husky Store tem prazo de até 7 dias
+                            para entrega, que será realiza diretamente pelo Discord.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="team-clean" style="background: rgba(0,0,0,0);">
+        <div class="container" style="filter: blur(0px);padding-bottom: 0px;">
+            <h3 class="text-center name" style="color: var(--secondary-text-color)">Equipe Husky Store</h3>
+            <div class="intro"></div>
+            <div class="row row-cols-4 d-flex d-xl-flex justify-content-center justify-content-xl-center people"
+                style="padding-bottom: 0px;">
+                <div class="col-auto col-md-6 col-lg-4 yeet">
+                    <a href="https://discord.com/users/918958416137953401" target="_blank">
+                        <img class="rounded-circle partner" src="assets/img/nick.png">
+                    </a>
+                    <p></p>
+                    <p style="font-weight: bold; color: #7033ff;">Desenvolvedor</p>
+                    <p>Nick</p>
+                </div>
+                <div class="col-auto col-md-6 col-lg-4 yeet">
+                    <a href="https://discord.com/users/909315026731548703" target="_blank">
+                        <img class="rounded-circle partner" src="assets/img/gryz.png">
+                    </a>
+                    <p></p>
+                    <p style="font-weight: bold; color: #7033ff;">Desenvolvedor</p>
+                    <p>Gryz</p>
+                </div>
+                <div class="col-auto col-md-6 col-lg-4 yeet">
+                    <a href="https://discord.com/users/844313793273790485" target="_blank">
+                        <img class="rounded-circle partner" src="assets/img/vivi.png">
+                    </a>
+                    <p></p>
+                    <p style="font-weight: bold; color: #7033ff;">Designer</p>
+                    <p>Vivi</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br><b></b>
+
+    <i></i>
+
+    </center>
+    </div>
+    </div>
+    </div>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="var(--secondary)" fill-opacity="1"
+            d="M0,160L48,154.7C96,149,192,139,288,154.7C384,171,480,213,576,218.7C672,224,768,192,864,181.3C960,171,1056,181,1152,192C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+    <div class="footer-dark" style="background: var(--secondary);padding-top: 0px;padding-bottom: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col item social"><a class="smoothScroll" href="#top"><i
+                            class="icon ion-android-arrow-up"></i></a></div>
+            </div>
+            <p class="copyright" style="color: var(--text-color);">Todos os direitos reservados. A marca Husky Store©️ e
+                seus elementos distintivos são propriedade exclusiva da Husky Store©️. Qualquer uso não autorizado da
+                marca é proibido e sujeito a medidas legais.</p>
+            <p class="copyright" style="color: var(--text-color);padding: 0px;">
+
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Counting.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
+</html>
